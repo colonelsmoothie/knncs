@@ -6,12 +6,10 @@ xnew <- as.matrix(read.csv("data/xnew.csv",header=FALSE))
 px1 <- read.csv("data/px1.csv",header=FALSE)$V1
 px2 <- read.csv("data/px2.csv",header=FALSE)$V1
 
-# Define server logic required to draw a histogram
 shinyServer(function(input, output) {
    
   output$distPlot <- renderPlot({
     
-    # generate bins based on input$bins from ui.R
     
     mod15 <- knn(x, xnew, g, k=input$k, prob=TRUE)
     prob <- attr(mod15, "prob")

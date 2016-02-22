@@ -2,8 +2,8 @@ name: knncs
 account: colonelsmoothie
 server: shinyapps.io
 appId: 84591
-bundleId: 377163
+bundleId: 377710
 url: https://colonelsmoothie.shinyapps.io/knncs/
-when: 1456092932.68662
+when: 1456160623.5524
 asMultiple: FALSE
 asStatic: FALSE
